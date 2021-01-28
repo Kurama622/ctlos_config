@@ -5,10 +5,16 @@ nvim bspwmrc
 find neof
 find neofe
 sea
-search
 fzf
 FZF
-
 search 
 searchc
 search
+search aut
+search ran
+search
+search 
+find 
+rename 
+filter 
+
