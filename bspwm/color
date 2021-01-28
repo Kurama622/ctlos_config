@@ -17,3 +17,4 @@ color12=$(xrdb -query | egrep -m1 '^\*\.?color12:' | awk '{print $NF}')
 color13=$(xrdb -query | egrep -m1 '^\*\.?color13:' | awk '{print $NF}')
 color14=$(xrdb -query | egrep -m1 '^\*\.?color14:' | awk '{print $NF}')
 color15=$(xrdb -query | egrep -m1 '^\*\.?color15:' | awk '{print $NF}')
+color16="#9370db"
