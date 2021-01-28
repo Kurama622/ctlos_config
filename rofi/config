@@ -24,3 +24,5 @@ rofi.hide-scrollbar:                 true
 rofi.markup-rows:                    false
 rofi.scrollbar-width:                0
 rofi.color-enabled:                  true
+rofi.run-command:                    /bin/zsh -i -c '{cmd}'
+rofi.run-list-command:               source ~/.config/rofi/aliases
