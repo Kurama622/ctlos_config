@@ -7,6 +7,7 @@ text = #9baec8
 
 [settings]
 screenchange-reload = true
+pseudo-transparency = true
 
 [global/wm]
 margin-top = 0
@@ -28,7 +29,7 @@ offset-x = 0
 offset-y = 0
 fixed-center = true
 bottom = false
-# locale = en_US.UTF-8
+#locale = en_US.UTF-8
 locale = zh_CN.UTF-8
 
 background = ${colors.background}
@@ -63,7 +64,7 @@ tray-position = right
 tray-detached = false
 tray-scaled = 1
 tray-background = ${root.background}
-tray-maxsize = 20
+#tray-maxsize = 12
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -119,7 +120,7 @@ exec = ~/.config/bspwm/polybar/uparch.sh
 interval = 600
 format-prefix = " "
 format-prefix-foreground = ${colors.accent}
-click-left = "urxvt -name Pacui -e ~/.bin/pacui &"
+click-left = "alacritty --class 'Pacui' -e ~/.bin/pacui &"
 
 
 
@@ -146,7 +147,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.accent}
 # click-left = "urxvt -name tmux -geometry 190x50 -e tmux new -s proc -d ranger\; splitw -dv htop\; splitw -dh gotop\; splitw -dh\; attach &"
-click-left = "urxvt -name Tmux -e sh -c 'tmux attach || tmux new -s work' &"
+click-left = "alacritty --class 'Tmux' -e sh -c 'tmux attach || tmux new -s work' &"
 #click-right = "urxvt -name Tmux -e sh -c '~/.bin/rxrun.sh' &"
 
 
@@ -168,7 +169,7 @@ click-right = "jgmenu_run >/dev/null 2>&1 &"
 type = custom/text
 content = 
 content-foreground = ${colors.accent}
-click-left = "urxvt -name Newsboat -e newsboat &"
+click-left = "alacritty --class 'Newsboat' -e newsboat &"
 click-right =
 
 
