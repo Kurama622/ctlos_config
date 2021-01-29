@@ -81,11 +81,13 @@ super + alt + m
   # $HOME/.config/bspwm/popup Ranger ranger
 
 # Balance desktop
-super + b
+#super + b
+ctrl + 0
   bspc node @focused:/ -B
 
 # make sxhkd reload its configuration files:
-super + Escape
+#super + Escape
+super + shift + c
   pkill -USR1 -x sxhkd
 
 #
@@ -117,7 +119,7 @@ super + {_,shift} + minus
   bspc node {,$(bspc query -N -d -n .hidden | head -n 1)} -g hidden
 
 # Focused desktop window gap
-super + alt + {o,i}
+super + {o,i}
   bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 # Focused desktop window gaps scroll
@@ -133,7 +135,8 @@ super + alt + button{4,5}
   # bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + alt + n
+#super + alt + n
+super + shift + Tab
   bspc node -s biggest
 
 #
@@ -149,7 +152,7 @@ super + shift + space
   bspc node -t "~"{floating,tiled}
 
 # window sticky
-super + g
+super + p
   bspc node -g sticky
 
 # set the node flags
@@ -173,21 +176,21 @@ alt + {_,shift + }Tab
   bspc node -f {next,prev}.local
 
 # focus desktop prev,next
-super + alt + {Left,Right}
-  bspc desktop -f {prev,next}.local
+#super + alt + {Left,Right}
+  #bspc desktop -f {prev,next}.local
 
 # focus the older or newer node in the focus history
-super + shift + {Left,Right}
-  bspc wm -h off; \
-  bspc node {older,newer} -f; \
-  bspc wm -h on
+#super + shift + {Left,Right}
+  #bspc wm -h off; \
+  #bspc node {older,newer} -f; \
+  #bspc wm -h on
 
 # focus desktop 1-10
 # super + {q,w,e,r,t,y,u,i,o,0}
 #   bspc desktop -f '^{1-9,10}'
 
 # focus or send to the given desktop
-super + {_,alt + }{1-9,0}
+super + {_,shift + }{1-9,0}
   bspc {desktop -f,node -d} '^{1-9,10}'
 
 # focus or send desktop next,prev
@@ -195,19 +198,22 @@ super + ctrl + {Right,Left}
   bspc node -d {next,prev} -f
 
 # focus the last node/desktop
-super + {grave,Tab}
-  bspc {node,desktop} -f last
+#super + {grave,Tab}
+super + Tab
+  bspc node -f last
+#super + Tab
+  #bspc desktop -f last
 
 #
 # preselect
 #
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+alt + shift + {h,j,k,l}
   bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
+alt + {1-9}
   bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
@@ -223,11 +229,14 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
+
+#super + ctrl + {h,j,k,l}
+ctrl + {Left,Down,Up,Right}
   bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+#super + ctrl + shift + {h,j,k,l}
+ctrl + shift + {Left,Down,Up,Right}
   bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
