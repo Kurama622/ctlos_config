@@ -14,34 +14,34 @@ env:
   TERM: xterm-256color
 
 window:
-  # Window dimensions (changes require restart)
+  # Window dimensisns (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+   #dimensions:
+     #columns: 2
+     #lines: 0
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
+   position:
+     x: 0
+     y: 0
 
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+   #padding:
+     #x: 4
+     #y: 8
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
-  # Window decorations
+  #Window decorations
   #
   # Values for `decorations`:
   #     - full: Borders and title bar
@@ -50,7 +50,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
+   #decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -93,15 +93,16 @@ font:
   normal:
     # Font family
     #
-     Default:
+    Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-     #family: FiraCode Nerd Font
-     family: Fira Code
+    #family: FiraCode Nerd Font
+    family: SauceCodePro Nerd Font Mono
+    #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
-     style: Regular
+    style: Regular
 
   # Bold font face
   bold:
@@ -109,8 +110,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: FiraCode Nerd Font
-    family: Fira Code
+    # family: FiraCode Nerd Font
+    #family: Source Code Pro
+    family: SauceCodePro Nerd Font Mono
+    #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -122,37 +125,42 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: FiraCode Nerd Font
-    family: Fira Code
+    #family: Source Code Pro
+    family: SauceCodePro Nerd Font Mono
+    #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
+    #family: FiraCode Nerd Font
+    #family: Source Code Pro
+    family: SauceCodePro Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+    style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   #offset:
-  #  x: 0
-  #  y: 0
+    #x: 0
+    #y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upward.
   #glyph_offset:
-  #  x: 0
-  #  y: 0
+    #x: 0
+    #y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -167,7 +175,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#131415'
+    #background: '#131415'
+    background: '#1b2b34'
     foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
