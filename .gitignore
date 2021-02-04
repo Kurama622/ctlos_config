@@ -1,3 +1,5 @@
+QtProject.conf
+gtk-2.0
 configstore
 ranger/history
 dein
