@@ -14,7 +14,7 @@ if [ "$(which polybar)" != "polybar not found" ]; then
   # (sleep 2; sh ~/.bin/phide.sh) &
 fi
 # run tint2 -c $HOME/.config/tint2/tray.tint2rc &
-run dunst &
+# run dunst &
 if [ "$(which thunar)" != "thunar not found" ]; then
   thunar --daemon &
 fi
