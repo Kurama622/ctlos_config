@@ -24,7 +24,7 @@ super + d
 
 # chrome
 super + shift + w
-  google-chrome-stable
+  google-chrome-stable --proxy-server="127.0.0.1:33983"
 
 # firefox
 super + shift + f
