@@ -99,6 +99,7 @@ font:
     #   - (Windows) Consolas
     #family: FiraCode Nerd Font
     family: SauceCodePro Nerd Font Mono
+    #family: SauceCodePro Nerd Font
     #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
@@ -113,6 +114,7 @@ font:
     # family: FiraCode Nerd Font
     #family: Source Code Pro
     family: SauceCodePro Nerd Font Mono
+    #family: SauceCodePro Nerd Font
     #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
@@ -127,6 +129,7 @@ font:
     #family: FiraCode Nerd Font
     #family: Source Code Pro
     family: SauceCodePro Nerd Font Mono
+    #family: SauceCodePro Nerd Font
     #family: Fira Code
 
     # The `style` can be specified to pick a specific face.
@@ -142,6 +145,7 @@ font:
     #family: FiraCode Nerd Font
     #family: Source Code Pro
     family: SauceCodePro Nerd Font Mono
+    #family: SauceCodePro Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
