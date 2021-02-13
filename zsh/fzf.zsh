@@ -1,6 +1,7 @@
 
 export FZF_COMPLETION_TRIGGER='\'
 export FZF_DEFAULT_OPTS='--bind ctrl-j:down,ctrl-k:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || ccat {}) 2> /dev/null | head -500"'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git --exclude .local --exclude .cache'
 export FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || ccat {}) 2> /dev/null | head -500'
 
 
