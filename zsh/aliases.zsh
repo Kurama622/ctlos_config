@@ -15,4 +15,6 @@ alias scc="python ~/usr_file/script/SuperClearCR.py"
 alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:45107"'
 alias usbl='source ~/usr_file/script/loadusb.sh'
 alias usbr='source ~/usr_file/script/removeusb.sh'
-
+alias ds='. $HOME/.config/dashboard-shell/dashboard-shell-run.sh'
+alias lg="lazygit"
+alias q="source $HOME/.config/dashboard-shell/add-recent-path.sh && exit"
