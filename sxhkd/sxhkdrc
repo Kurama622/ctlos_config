@@ -18,7 +18,11 @@ super + Return
 alt + t
   $HOME/.config/bspwm/bspwmfloat alacritty --class "Float"
 
+# terminal emulator dashboard-shell
+alt + s
+  alacritty --class "Dash" -e ~/.config/dashboard-shell/dashboard-shell-run.sh
 # program launcher rofi
+#
 super + d
   rofi -show drun
 
@@ -99,8 +103,14 @@ super + shift + {E,R}
   bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }q
-  bspc node -{c,k}
+#super + {_,shift + }q
+  #bspc node -{c,k}
+
+super + shift + q
+  bspc node -c
+
+#super + q
+  #sh -c "source $HOME/.config/dashboard-shell/add-recent-path.sh"
 
 # gaps/monocle toggle
 super + c

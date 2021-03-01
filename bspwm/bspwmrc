@@ -67,6 +67,7 @@ bspc rule -a Alacritty:Newsboat state=floating center=on
 bspc rule -a Alacritty:Ranger state=floating center=on
 bspc rule -a Alacritty:Pacui state=floating center=on
 bspc rule -a Alacritty:Float state=floating rectangle=1200x600+0+0 center=on
+bspc rule -a Alacritty:Dash state=floating rectangle=900x600+0+0 center=on
 bspc rule -a Alacritty:Draw state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Gpick state=floating
