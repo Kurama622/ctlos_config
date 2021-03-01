@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 
 print_info() {
-    # info title
-    # info underline
-    # info "OS" distro
-    prin "$(color 4)ctlos.github.io"
-    info "Host" model
+    info title
+    info underline
+    #info "OS" distro
+    #prin "$(color 4)ctlos.github.io"
+    #info "Host" model
     info "Kernel" kernel
     info "Uptime" uptime
     info "Packages" packages
@@ -14,13 +14,13 @@ print_info() {
     info "Theme" theme
     info "Icons" icons
     info "Terminal" term
-    info "Terminal Font" term_font
+    #info "Terminal Font" term_font
     info "Font" font
     info "Memory" memory
     #info "CPU" cpu
     #info "GPU" gpu
-    #info "CPU Usage" cpu_usage
-    #info "Battery" Battery
+    info "CPU Usage" cpu_usage
+    info "Battery" Battery
     info "Disk" disk
     #info "Local IP" local_ip
     # info "Public IP" public_ip
@@ -62,8 +62,9 @@ block_width=3
 block_height=1
 image_backend="ascii"
 image_source="auto"
-ascii_distro="auto"
+#ascii_distro="auto"
+ascii_distro="windows"
 ascii_colors=(distro)
 # ascii_bold="on"
-gap=3
+gap=5
 config_version="3.3.0"
