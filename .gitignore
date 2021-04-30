@@ -1,12 +1,13 @@
 kwalletrc
 konsolerc
 konsole.klanguageoverridesrc
+konsole.kmessagebox
 klanguageoverridesrc
-./kitty
+kitty
 kconf_updaterc
 kdeglobals
-./Kingsoft
-./BaiduPCS-Go
+Kingsoft
+BaiduPCS-Go
 ranger/tagged
 dashboard-shell/.AddRecFolder
 ncmpcpp

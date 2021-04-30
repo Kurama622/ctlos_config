@@ -1,0 +1,28 @@
+configuration {
+	modi: "window,drun,run";
+	width: 30;
+	lines: 7;
+	columns: 1;
+	font: "ClearSansMedium 12";
+	bw: 7;
+	location: 0;
+	padding: 5;
+	show-icons: true;
+	terminal: "alacritty";
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e "{ssh-client} {host}"";
+	run-command: "/bin/zsh -i -c '{cmd}'";
+	run-list-command: "source ~/.config/rofi/aliases";
+	run-shell-command: "{terminal} -e {cmd}";
+	icon-theme: "dui-ico";
+	case-sensitive: false;
+	sidebar-mode: true;
+	line-margin: 10;
+	separator-style: "none";
+	hide-scrollbar: true;
+	scrollbar-width: 0;
+	color-normal: "#161720, #e8eaef, #161720, #5A74CA, #161720";
+	color-urgent: "#161720, #e8eaef, #161720, #5A74CA, #161720";
+	color-active: "#161720, #e8eaef, #161720, #5A74CA, #161720";
+	color-window: "#161720, #75444A57";
+}

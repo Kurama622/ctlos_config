@@ -114,13 +114,13 @@ label-empty-padding = 4
 
 
 
-[module/uparch]
-type = custom/script
-exec = ~/.config/bspwm/polybar/uparch.sh
-interval = 600
-format-prefix = " "
-format-prefix-foreground = ${colors.accent}
-click-left = "alacritty --class 'Pacui' -e ~/.bin/pacui &"
+#[module/uparch]
+#type = custom/script
+#exec = ~/.config/bspwm/polybar/uparch.sh
+#interval = 600
+#format-prefix = " "
+#format-prefix-foreground = ${colors.accent}
+#click-left = "alacritty --class 'Pacui' -e ~/.bin/pacui &"
 
 
 

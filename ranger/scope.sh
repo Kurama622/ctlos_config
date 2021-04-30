@@ -123,7 +123,7 @@ handle_mime() {
                 local highlight_format='ansi'
             fi
             highlight --out-format="${highlight_format}" --style="${HIGHLIGHT_STYLE}" -- "${FILE_PATH}" && exit 5
-            # pygmentize -f "${pygmentize_format}" -O "style=${PYGMENTIZE_STYLE}" -- "${FILE_PATH}" && exit 5
+            #pygmentize -f "${pygmentize_format}" -O "style=${PYGMENTIZE_STYLE}" -- "${FILE_PATH}" && exit 5
             exit 2;;
 
         # Image

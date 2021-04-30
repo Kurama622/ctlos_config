@@ -5,6 +5,7 @@
 # show help on key bindings
 super + F1
   $HOME/.config/bspwm/bspwmfloat alacritty --class "Float" -e ~/.config/bspwm/show_keys
+  #$HOME/.config/bspwm/bspwmfloat konsole -e ~/.config/bspwm/show_keys
 
 # terminal emulator
 alt + Return
@@ -13,15 +14,18 @@ alt + Return
 # terminal emulator Tiled
 super + Return
   alacritty --class "Tiled"
+  #konsole
 
 # terminal emulator Float
 alt + t
   $HOME/.config/bspwm/bspwmfloat alacritty --class "Float"
+  #$HOME/.config/bspwm/bspwmfloat konsole
 
 # terminal emulator dashboard-shell
 alt + s
   alacritty --class "Dash" -e ~/.config/dashboard-shell/dashboard-shell-run.sh
-# program launcher rofi
+  #st -c "Dash" -e ~/.config/dashboard-shell/dashboard-shell-run.sh
+# program launcher rofe
 #
 super + d
   rofi -show drun
@@ -29,6 +33,7 @@ super + d
 # chrome
 super + shift + w
   google-chrome-stable --proxy-server="127.0.0.1:33983"
+  #google-chrome-stable --proxy-server="127.0.0.1:44593"
 
 # firefox
 super + shift + f
@@ -252,3 +257,6 @@ ctrl + shift + {Left,Down,Up,Right}
 # move a floating window
 super + {Left,Down,Up,Right}
   bspc node -v {-20 0,0 20,0 -20,20 0}
+
+alt + space
+    bspc node @parent -R 90

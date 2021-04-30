@@ -9,4 +9,3 @@ set statusbar-home-tilde 1
 set font "Fira Code 12"
 
 map Q quit
-

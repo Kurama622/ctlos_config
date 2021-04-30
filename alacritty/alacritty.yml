@@ -97,6 +97,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
+    #family: CascadiaCode
+    #family: JetBrains Mono
     #family: FiraCode Nerd Font
     family: SauceCodePro Nerd Font Mono
     #family: SauceCodePro Nerd Font
@@ -111,7 +113,9 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: FiraCode Nerd Font
+    #family: FiraCode Nerd Font
+    #family: CascadiaCode
+    #family: JetBrains Mono
     #family: Source Code Pro
     family: SauceCodePro Nerd Font Mono
     #family: SauceCodePro Nerd Font
@@ -128,6 +132,8 @@ font:
     # value specified for the normal font.
     #family: FiraCode Nerd Font
     #family: Source Code Pro
+    #family: CascadiaCode
+    #family: JetBrains Mono
     family: SauceCodePro Nerd Font Mono
     #family: SauceCodePro Nerd Font
     #family: Fira Code
@@ -143,6 +149,8 @@ font:
     # value specified for the normal font.
     #family: monospace
     #family: FiraCode Nerd Font
+    #family: CascadiaCode
+    #family: JetBrains Mono
     #family: Source Code Pro
     family: SauceCodePro Nerd Font Mono
     #family: SauceCodePro Nerd Font
@@ -180,7 +188,10 @@ colors:
   # Default colors
   primary:
     #background: '#131415'
-    background: '#1b2b34'
+    #background: '#282C34'
+    #background: '#1d1f21'
+    background: '#1c1c1c'
+    #background: '#1b2b34'
     foreground: '#c5c8c6'
 
     # Bright and dim foreground colors

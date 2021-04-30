@@ -2,6 +2,8 @@
 
 FZF_DEFAULT_OPTS+="
   --color=pointer:#ff5050\
-  --color=bg+:#1b2b34 \
+  --color=bg+:#1c1c1c \
   --color=preview-fg:#01aa24 \
   --color=fg+:#ff5050"
+
+# --color=bg+:#1b2b34 \
